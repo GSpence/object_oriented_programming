@@ -1,3 +1,9 @@
+#Step 4
+class Person
+	def initialize(name)
+		@name = name
+	end
+
 
 #Steps 1, 2, 3
 class Student
