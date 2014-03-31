@@ -14,7 +14,8 @@ class rover
 		elsif @direction == "S"
 			@y -= 1
 		elsif @direction == "W"
-			@X -= 1		
+			@x -= 1		
+		end
 	end
 
 	def to_s

@@ -5,10 +5,13 @@ require './rover'
 # LMLMLMLMM
 
 class Commander
+	X = 0
+	Y = 1
+	DIRECTION = 2
 
 	def create_rover(starting_point)
 		coords = starting_point.split(" ")
-		@rover = Rover.new(coords[0], coords[1], coords[2])
+		@rover = Rover.new(coords[X], coords[Y], coords[Z])
 	end
 
 	def move_rover(move_command)
@@ -24,4 +27,4 @@ class Commander
 end
 
 command = Commander.new
-command.create_rover(1, 2, N)
+command.create_rover("1, 2, N")
